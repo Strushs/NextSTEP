@@ -42,8 +42,8 @@
 
 .fend {
   background: url("../img/frontend.jpg");
-  width: 90dvw;
   background-size: cover;
   background-position: center;
-  height: 800px;
+  width: 100dvw;
+  height: 700px;
 }

@@ -74,8 +74,8 @@ export default function Quiz({ questions, userId }: QuizProps) {
   };
 
   return (
-    <div className="min-h-[500px]">
-      <div className="max-w-[1500px] mx-auto w-[90%] flex justify-center py-10 flex-col">
+    <div className="min-h-[500px] w-full">
+      <div className="max-w-[1500px] w-full flex justify-center py-10 flex-col">
         {!showResults ? (
           <>
             <div className="flex justify-between mb-10 items-center">
@@ -113,13 +113,11 @@ export default function Quiz({ questions, userId }: QuizProps) {
             </div>
           </>
         ) : (
-          <div className="text-center">
-            <div className="fend flex justify-center items-center flex-col">
+            <div className="fend w-full flex justify-center items-center flex-col">
               <h3 className="text-3xl uppercase mb-10 baloo text-tetiary bg-[#ffffff9f] rounded-md p-5">
                 Powinieneś wybrać kierunek informatyka Front-End Developer
               </h3>
             </div>
-          </div>
         )}
       </div>
     </div>

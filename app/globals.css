@@ -2,20 +2,48 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
+::-webkit-scrollbar {
+  width: 0;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+.baloo {
+  font-family: "Baloo 2", serif;
+  font-optical-sizing: auto;
+  font-weight: 900;
+  font-style: normal;
 }
 
-body {
-  color: var(--foreground);
-  background: var(--background);
-  font-family: Arial, Helvetica, sans-serif;
+.navbar {
+  z-index: 100;
+  background: #ffffffa0;
+}
+
+.btn {
+  background: #0069ffe0;
+}
+
+.wsb {
+  background: url("../img/wsb.png");
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.navimg {
+  top: 70px;
+  background: url("../img/hero.png");
+  width: 100dvw;
+  height: 600px;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  position: absolute;
+}
+
+.fend {
+  background: url("../img/frontend.jpg");
+  width: 90dvw;
+  background-size: cover;
+  background-position: center;
+  height: 800px;
 }
